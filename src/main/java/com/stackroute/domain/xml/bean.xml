@@ -33,6 +33,9 @@
     <bean name = "custom" class = "com.stackroute.Demo.BeanLifecycleDemoBean" init-method="customInit" destroy-method="customDestroy">
 
     </bean>
+    <bean name="beanpostprocessor" class = "com.stackroute.Demo.BeanPostProcessorDemoBean" >
+
+    </bean>
 
 
 </beans>
