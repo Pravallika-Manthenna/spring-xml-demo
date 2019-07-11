@@ -19,23 +19,9 @@ public class Main {
     movie.displayActor();
 
 
-    BeanFactory beanFactory = new XmlBeanFactory(new ClassPathResource("bean.xml"));
-    Movie picture = (Movie) beanFactory.getBean("Movie");
-    picture.displayActor();
+    Movie movie1 = context.getBean("Movie1", Movie.class);
+    movie.displayActor();
 
-
-    DefaultListableBeanFactory factory = new DefaultListableBeanFactory();
-    BeanDefinitionRegistry register = new GenericApplicationContext(factory);
-    BeanDefinitionReader reader = new XmlBeanDefinitionReader(register);
-    reader.loadBeanDefinitions("bean.xml");
-    Movie picture1 = (Movie) factory.getBean("Movie");
-    picture1.displayActor();
-
-
-   // BeanDefinitionReader reader = new XmlBeanDefinitionReader(factory);
-
-
-
-
+    System.out.println(movie==movie1);
   }
 }
