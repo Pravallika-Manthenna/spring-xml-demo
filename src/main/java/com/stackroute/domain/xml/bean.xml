@@ -27,7 +27,12 @@
 
 
     </bean>
+<bean name="beanlifecycle" class = "com.stackroute.Demo.BeanLifecycleDemoBean" >
 
+</bean>
+    <bean name = "custom" class = "com.stackroute.Demo.BeanLifecycleDemoBean" init-method="customInit" destroy-method="customDestroy">
+
+    </bean>
 
 
 </beans>

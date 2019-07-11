@@ -23,5 +23,8 @@ public class Main {
     movie.displayActor();
 
     System.out.println(movie==movie1);
+
+
+    ((ClassPathXmlApplicationContext)context).close();
   }
 }
