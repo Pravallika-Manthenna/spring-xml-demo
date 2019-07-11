@@ -23,10 +23,12 @@
     </bean>
 
 
-    <bean name = "Movie,Movie1" class = "com.stackroute.domain.Movie" scope="prototype">
+    <bean name = "Movie,Movie1" class = "com.stackroute.domain.Movie" scope="prototype" autowire="byName">
 
-        <constructor-arg name="actor" ref="actor"></constructor-arg>
+
     </bean>
+
+    
 
 </beans>
 
