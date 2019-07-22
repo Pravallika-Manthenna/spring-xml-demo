@@ -24,7 +24,7 @@ public class Main {
 
     System.out.println(movie==movie1);
 
-
+//destroy-method
     ((ClassPathXmlApplicationContext)context).close();
   }
 }
