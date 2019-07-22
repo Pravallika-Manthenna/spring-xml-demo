@@ -1,7 +1,7 @@
 package com.stackroute.domain;
 
 public class Actor {
-
+//declaring variables
   String name;
   String gender;
   int age;
@@ -12,7 +12,7 @@ public class Actor {
     this.age = age;
   }
 
-
+//generating setter
   public void setName(String name) {
     this.name = name;
   }
