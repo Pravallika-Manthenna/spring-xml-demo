@@ -24,7 +24,7 @@
         <constructor-arg name="age" value="24" index="2" type="int"></constructor-arg>
     </bean>
 
-
+//declaring scope to prototype
     <bean name = "Movie,Movie1" class = "com.stackroute.domain.Movie" scope="prototype">
 
         <constructor-arg name="actor" ref="actor"></constructor-arg>
