@@ -3,7 +3,9 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
-
+       
+//dependency injection using constructor-arg 
+       
     <bean id = "actor" class = "com.stackroute.domain.Actor">
         <constructor-arg name="name" value ="Kiran" index="0" type="java.lang.String"></constructor-arg>
         <constructor-arg name="gender" value ="Male" index="1" type="java.lang.String"></constructor-arg>
