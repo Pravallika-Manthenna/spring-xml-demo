@@ -32,13 +32,13 @@ public class Movie implements ApplicationContextAware, BeanFactoryAware , BeanNa
   {
     actor.display();
   }
-
+//using application context
   @Override
   public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
     System.out.println("Application Context implemented");
 
   }
-
+//using bean factory
   @Override
   public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
     System.out.println("Bean factory implemented");
