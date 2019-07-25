@@ -8,7 +8,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 
 public class Movie implements ApplicationContextAware, BeanFactoryAware , BeanNameAware {
-
+//creating object for actor class in movie class
   Actor actor;
 
   public Movie(){
@@ -32,19 +32,17 @@ public class Movie implements ApplicationContextAware, BeanFactoryAware , BeanNa
   {
     actor.display();
   }
-
+//using application context 
   @Override
   public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
     System.out.println("Application Context implemented");
-
-  }
-
+ }
+// implementing bean factory
   @Override
   public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
     System.out.println("Bean factory implemented");
-
-  }
-
+ }
+//bean name
   @Override
   public void setBeanName(String s) {
     System.out.println("Bean Name implemented ");
