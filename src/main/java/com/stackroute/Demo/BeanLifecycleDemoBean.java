@@ -11,14 +11,14 @@ public class BeanLifecycleDemoBean implements InitializingBean , DisposableBean 
  public void customDestroy(){
    System.out.println("custom is destroyed");
  }
-
+//implementing initializing bean methods
   @Override
   public void afterPropertiesSet() throws Exception {
 
     System.out.println("after properties set implemented");
 
   }
-
+// implementing disposable bean method
   @Override
   public void destroy() throws Exception {
     System.out.println("destroy is implemented");
