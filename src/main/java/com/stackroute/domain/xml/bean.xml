@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
-
+//creating beans using constructor-arg
     <bean id = "actor" class = "com.stackroute.domain.Actor">
         <constructor-arg name="name" value ="Kiran" index="0" type="java.lang.String"></constructor-arg>
         <constructor-arg name="gender" value ="Male" index="1" type="java.lang.String"></constructor-arg>
@@ -21,7 +21,7 @@
         <constructor-arg name="gender" value ="female" index="1" type="java.lang.String"></constructor-arg>
         <constructor-arg name="age" value="24" index="2" type="int"></constructor-arg>
     </bean>
-
+// using autowire to implement by name 
 
     <bean name = "Movie,Movie1" class = "com.stackroute.domain.Movie" scope="prototype" autowire="byName">
 
