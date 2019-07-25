@@ -12,6 +12,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.GenericApplicationContext;
 import org.springframework.core.io.ClassPathResource;
 
+//main 
 public class Main {
   public  static  void main(String[] args) {
     ApplicationContext context = new ClassPathXmlApplicationContext("bean.xml");
@@ -21,7 +22,7 @@ public class Main {
 
     Movie movie1 = context.getBean("Movie1", Movie.class);
     movie.displayActor();
-
+//comparing beans
     System.out.println(movie==movie1);
   }
 }
