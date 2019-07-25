@@ -30,6 +30,7 @@
 <bean name="beanlifecycle" class = "com.stackroute.Demo.BeanLifecycleDemoBean" >
 
 </bean>
+       //bean for explicitly calling init and destroy methods
     <bean name = "custom" class = "com.stackroute.Demo.BeanLifecycleDemoBean" init-method="customInit" destroy-method="customDestroy">
 
     </bean>
