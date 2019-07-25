@@ -12,13 +12,14 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.GenericApplicationContext;
 import org.springframework.core.io.ClassPathResource;
 
+//main class
 public class Main {
   public  static  void main(String[] args) {
     ApplicationContext context = new ClassPathXmlApplicationContext("bean.xml");
     Movie movie = context.getBean("Movie", Movie.class);
     movie.displayActor();
 
-
+// display method
     Movie movie1 = context.getBean("Movie1", Movie.class);
     movie.displayActor();
 
