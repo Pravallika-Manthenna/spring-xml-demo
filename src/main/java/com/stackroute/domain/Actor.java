@@ -5,14 +5,14 @@ public class Actor {
   String name;
   String gender;
   int age;
-
+//generating constructor
   public Actor(String name, String gender, int age) {
     this.name = name;
     this.gender = gender;
     this.age = age;
   }
 
-
+//generating setters and getters
   public void setName(String name) {
     this.name = name;
   }
