@@ -8,6 +8,7 @@ public class BeanLifecycleDemoBean implements InitializingBean , DisposableBean 
    System.out.println("custom is initiated");
 
  }
+ //method for custom destroy
  public void customDestroy(){
    System.out.println("custom is destroyed");
  }
