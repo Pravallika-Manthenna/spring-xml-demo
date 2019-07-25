@@ -20,11 +20,11 @@ public class Main {
 
 
     Movie movie1 = context.getBean("Movie1", Movie.class);
-    movie.displayActor();
+    movie.displayActor();//calling method
 
-    System.out.println(movie==movie1);
+    System.out.println(movie==movie1);//comparing both teh beans
 
-
+//using close to destroy the closepath xml application
     ((ClassPathXmlApplicationContext)context).close();
   }
 }
