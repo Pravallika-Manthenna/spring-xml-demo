@@ -1,14 +1,19 @@
 package com.stackroute.domain;
 
-public class Movie {
 
-  public Actor getActor() {
+//creating object for actor class
+
+public class Movie {
+  Actor actor;
+
+  //generating setter and getter
+  public Actor getActor()
+  {
     return actor;
   }
 
-  Actor actor;
-
-  public void setActor(Actor actor) {
+  public void setActor(Actor actor)
+  {
     this.actor = actor;
   }
   public void displayActor()

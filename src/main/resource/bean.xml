@@ -4,6 +4,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+       //using property tag for creating bean
+      
     <bean id = "actor" class = "com.stackroute.domain.Actor">
         <property name="name" value ="Kiran"></property>
         <property name="gender" value ="Male"></property>
@@ -14,7 +16,5 @@
 
         <property name="actor" ref="actor"></property>
     </bean>
-
-
 </beans>
 

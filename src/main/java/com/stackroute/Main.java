@@ -14,28 +14,23 @@ import org.springframework.core.io.ClassPathResource;
 
 public class Main {
   public  static  void main(String[] args) {
+    
+    //using application context
     ApplicationContext context = new ClassPathXmlApplicationContext("bean.xml");
     Movie movie = context.getBean("Movie", Movie.class);
     movie.displayActor();
 
-
+    //using beanFactory
     BeanFactory beanFactory = new XmlBeanFactory(new ClassPathResource("bean.xml"));
     Movie picture = (Movie) beanFactory.getBean("Movie");
     picture.displayActor();
 
-
+    //using bean definition registory and bean reader
     DefaultListableBeanFactory factory = new DefaultListableBeanFactory();
     BeanDefinitionRegistry register = new GenericApplicationContext(factory);
     BeanDefinitionReader reader = new XmlBeanDefinitionReader(register);
     reader.loadBeanDefinitions("bean.xml");
     Movie picture1 = (Movie) factory.getBean("Movie");
     picture1.displayActor();
-
-
-   // BeanDefinitionReader reader = new XmlBeanDefinitionReader(factory);
-
-
-
-
   }
 }

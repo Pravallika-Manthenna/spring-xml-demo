@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ######################
 # Project Specific
 ######################
@@ -116,3 +117,7 @@ Desktop.ini
 # ESLint
 ######################
 .eslintcache
+=======
+target/
+.idea/
+>>>>>>> f76df7537acd82b8f3794f91e66027b41a541466
